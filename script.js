@@ -90,6 +90,8 @@ document.getElementById("searchForm").addEventListener("submit", (e) => {
   } else {
     msg.innerHTML = `<strong>${searchId}</strong> → ${value}`;
   }
+  input.value = "";
+  input.focus();
 });
 
 /* ---------- Scanner ---------- */
